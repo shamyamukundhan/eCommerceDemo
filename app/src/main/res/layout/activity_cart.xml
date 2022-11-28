@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -18,10 +17,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Total Price ="
+        android:text="@string/total_price"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="20dp" />
+        android:textSize="20sp" />
 
 </RelativeLayout>
 
@@ -34,12 +33,9 @@
         android:layout_marginEnd="10dp"
         android:textAlignment="center"
         android:layout_centerVertical="true"
-        android:text="Congratulations!,Your final order has been placed successfully Soon it will be verified"
+        android:text="@string/congratulations_your_order_has_been_placed_successfully"
         android:textStyle="bold"
-        android:textSize="20dp"
-
-
-        ></TextView>
+        android:textSize="20sp"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/cart_list_recyclerview"
@@ -57,9 +53,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="@color/purple_500"
-        android:text="Next"
+        android:text="@string/next"
         android:textColor="@color/white"
-        android:textSize="20sp"></Button>
+        android:textSize="20sp"/>
 
 
 

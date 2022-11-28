@@ -1,34 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/welcome"
+    android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:id="@+id/app_logo"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp"
-        android:src="@drawable/applogo"
-        />
-    <TextView
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/app_slogan"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="88dp"
-        android:layout_marginTop="140dp"
-        android:text="Find,Discover Choose and Buy"
-        android:textSize="22sp"
-        android:textAlignment="center"
-        android:textColor="@color/purple_500"
-        android:textStyle="bold|italic"/>
-    
+        <ImageView
+            android:id="@+id/login_applogo"
+            android:layout_width="match_parent"
+            android:layout_height="318dp"
+            android:layout_marginTop="50dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/walmart_logo"
+            android:contentDescription="@string/app_name"/>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -42,7 +28,7 @@
         android:padding="20dp"
         android:textAllCaps="false"
         android:textSize="18sp"
-        android:text="Already have an account? Login"
+        android:text="@string/already_have_an_account_login"
         android:textColor="@color/white"/>
 
     <Button
@@ -57,8 +43,8 @@
         android:padding="20dp"
         android:textAllCaps="false"
         android:textSize="18sp"
-        android:text="Join Now"
-        android:textColor="@color/white"/>
+        android:text="@string/join_now"
+        android:textColor="@color/purple_500"/>
 
 
 </RelativeLayout>
